@@ -1,3 +1,15 @@
+<style>
+    .vroem circle.gauge-arc {
+        stroke-dasharray: 185, 330!important;
+        stroke: darkred!important;
+    }
+    button {
+        padding: 1em 2em;
+        margin: 6em;
+        font-size: large;
+        cursor: pointer;
+    }
+</style>
 <article>
     <header>
     <h1></h1>
@@ -8,9 +20,12 @@
     stroke: #e3e2e282;
     stroke-width: 15px;
 "></circle>
-        <circle class="gauge-arc" transform="rotate(-90 60 60)" stroke-dasharray="0 329" stroke-dashoffset="0" r="45" cx="60" cy="60" style="stroke-dasharray: 30, 360;stroke: #bada55;stroke-dashoffset: 0;transition: all 0.5s;stroke-width: 15px;stroke-linecap: round;"></circle>
+        <circle class="gauge-arc" transform="rotate(-210 60 60)" stroke-dasharray="0 329" stroke-dashoffset="0" r="45" cx="60" cy="60" style="stroke-dasharray: 0, 329;stroke: #bada55;stroke-dashoffset: 0;transition: all 0.5s;stroke-width: 15px;stroke-linecap: round;"></circle>
       </svg>
-      
+      <button type="button">vroem</button>
+        <script>
+            (document.querySelector('button').addEventlistener('click', () => document.body.classList.toggle('vroem');
+        </script>
     </section>
     <footer>
     </footer>
